@@ -103,3 +103,84 @@ body .container1 .container2 .container4 button:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transition: 0.3s;
 }
+#mensagem {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: #fff;
+    min-height: 40px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.acertouAnimacao {
+    animation: aparecer 0.6s ease;
+}
+
+.errouAnimacao {
+    animation: tremer 0.5s ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes tremer {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-8px);
+    }
+
+    40% {
+        transform: translateX(8px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+}
+
+.pulsar {
+    animation: pulsar 0.8s ease;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Botoes debaixo */
+
+
+
+
+/*  */
+
+

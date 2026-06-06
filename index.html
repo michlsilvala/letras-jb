@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <script src="script/script.js" defer></script>
+    <script src="script/efeitoBotao.js" defer></script>
 </head>
 
 <body>
@@ -25,11 +26,18 @@
             </div>
 
             <div class="container4">
-                <button>Let Me Love You</button>
-                <button>Never Say Never</button>
-                <button>As I Am</button>
-                <button>Company</button>
+                <button id="music1" onclick="errou(1)">Walking Away</button>
+                <button id="music2" onclick="errou(2)">Never Say Never</button>
+                <button id="music3" onclick="acertou()">Let Me Love You</button>
+                <button id="music4" onclick="errou(4)">Company</button>
             </div>
+
+            <p id="mensagem"></p>
+
+            <!-- <div class="container5">
+                <button class="btn-voltar">Voltar</button>
+                <button class="btn-proximo">Próximo</button>
+            </div> -->
         </div>
   
     </div>
