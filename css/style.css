@@ -13,7 +13,8 @@ body {
 }
 
 body .container1 {
-    width: 100%;
+    width: 110%;
+    /* min-width: 100vw; */
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
