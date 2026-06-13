@@ -16,7 +16,7 @@
     <div class="container1">
         <div class="container2">
             <div class="container3">
-                <p>Diga que iremos juntos pelos mais    escuro dos dias</p>
+                <p>Diga que iremos juntos pelos mais escuro dos dias</p>
                 <p>O paraíso está a uma decepção de distância</p>
                 <p>Nunca te deixarei, nunca me decepcione</p>
                 <p>Oh, tem sido uma baita de uma jornada</p>
@@ -26,22 +26,27 @@
                 <h3>Qual a música dessa letra?</h3>
             </div>
 
-            <div class="container4">
-                <button id="music1" onclick="errou(1)">Walking Away</button>
-                <button id="music2" onclick="errou(2)">Never Say Never</button>
-                <button id="music3" onclick="acertou()">Let Me Love You</button>
-                <button id="music4" onclick="errou(4)">Company</button>
+            <div class="container4" data-correta="3">
+                <button id="music1" onclick="responder(1)">Walking Away</button>
+                <button id="music2" onclick="responder(2)">Never Say Never</button>
+                <button id="music3" onclick="responder(3)">Let Me Love You</button>
+                <button id="music4" onclick="responder(4)">Company</button>
             </div>
 
             <p id="mensagem"></p>
 
             <div class="container5">
                 <!-- <button class="btn-voltar">Voltar</button> -->
-                <button class="btn-proximo">Próximo</button>
+                <button onclick="window.location.href='musica2.html'" class="btn-proximo">Próximo</button>
             </div>
         </div>
-  
+
     </div>
+
+    <script>
+        localStorage.setItem("acertos", 0);
+        localStorage.setItem("erros", 0);
+    </script>
 </body>
 
 </html>

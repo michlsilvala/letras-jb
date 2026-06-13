@@ -20,19 +20,22 @@ async function iniciarAnimacao() {
         p.textContent = "";
     });
 
+    // Digita os versos
     for (let i = 0; i < paragrafos.length; i++) {
         await escrever(paragrafos[i], textos[i], 40);
         await new Promise(resolve => setTimeout(resolve, 500));
     }
 
-    // Faz o h3 aparecer após a letra terminar
+    // Mostra a pergunta
     titulo.style.opacity = "1";
 
-    // Espera um pouco após aparecer o título
+    // Espera um pouco
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     // Mostra os botões suavemente
+    containerBotoes.style.visibility = "visible";
     containerBotoes.style.opacity = "1";
+    containerBotoes.style.transform = "translateY(0)";
 }
 
 iniciarAnimacao();
